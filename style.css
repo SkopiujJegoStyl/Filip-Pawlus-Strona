@@ -1,0 +1,53 @@
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 0.2fr 3fr 0.8fr;
+    grid-template-areas: 
+    "nav nav nav"
+    "aside main none"
+    "aside main footer"
+    "aside main footer";
+    grid-gap: 0.6rem;
+}
+
+nav {
+    background-color: darkblue;
+    grid-area: nav;
+    vertical-align: middle;
+    padding: 5px;
+    color: antiquewhite;
+}
+
+aside {
+    background-color: darkgreen;
+    grid-area: aside;
+    color: antiquewhite;
+    text-align: center;
+    padding: 25% 0;
+}
+
+main {
+    background-color: darkred;
+    grid-area: main;
+    color: antiquewhite;
+    text-align: center;
+    padding: 25% 0;
+}
+
+footer {
+    background-color: darkgoldenrod;
+    grid-area: footer;
+    color: antiquewhite;
+    text-align: center;
+    padding: 25% 0;
+}
+
+#book {
+    height: 35px;
+    width: 35px;
+}
+
+.link {
+    vertical-align: middle;
+}
